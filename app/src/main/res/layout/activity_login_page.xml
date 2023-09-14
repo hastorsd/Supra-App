@@ -61,7 +61,7 @@
         app:layout_constraintVertical_bias="0.694" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/buttonLogin"
         android:layout_width="350dp"
         android:layout_height="wrap_content"
         android:backgroundTint="#FFFFFF"
@@ -143,7 +143,7 @@
         app:layout_constraintVertical_bias="0.325" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/buatAkun"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="@string/create"
