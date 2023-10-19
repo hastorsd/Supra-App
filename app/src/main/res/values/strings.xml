@@ -7,4 +7,10 @@
         <font color="#64748B">Don\'t have account? </font>
         <font color="#FFFFFF">Create now</font>
     </string>
+    <string name="hello_there">Hello there,</string>
+    <string name="here_are_your_details">Here are your details</string>
+    <string name="record_saved">Record saved successfully</string>
+    <string name="clear_record">Clear Record</string>
+    <string name="name">Name</string>
+    <string name="save">Save</string>
 </resources>
