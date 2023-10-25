@@ -1,14 +1,15 @@
 package com.example.supraapp.roomdatabase.viewmodel
 
-import androidx.hilt.lifecycle.ViewModelInject
+
 import androidx.lifecycle.*
 import com.example.supraapp.roomdatabase.model.User
 import com.example.supraapp.roomdatabase.repository.UserRepo
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.*
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
-class UserViewModel @ViewModelInject constructor(private val userRepo: UserRepo): ViewModel() {
+class UserViewModel @Inject constructor(private val userRepo: UserRepo): ViewModel() {
 
 
     /**
