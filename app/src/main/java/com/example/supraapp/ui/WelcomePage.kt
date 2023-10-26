@@ -16,7 +16,7 @@ class WelcomePage : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.buttonToHome.setOnClickListener {
-            startActivity(Intent(this, Home::class.java))
+            startActivity(Intent(this, TampilanApi::class.java))
             finish()
         }
     }
