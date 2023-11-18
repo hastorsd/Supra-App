@@ -4,10 +4,9 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.example.supraapp.R
-import com.example.supraapp.data.MainAdapter
-import com.example.supraapp.data.remote.ApiService
-import com.example.supraapp.data.remote.UsersItem
+import com.example.supraapp.dataapi.MainAdapter
+import com.example.supraapp.dataapi.remote.ApiService
+import com.example.supraapp.dataapi.remote.UsersItem
 import com.example.supraapp.databinding.ActivityTampilanApiBinding
 import com.example.supraapp.util.constant.BASE_URL
 import retrofit2.Retrofit

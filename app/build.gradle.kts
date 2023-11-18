@@ -44,7 +44,9 @@ dependencies {
 
     implementation("androidx.core:core-ktx:1.9.0")
     implementation("androidx.appcompat:appcompat:1.6.1")
+
     implementation("com.google.android.material:material:1.9.0")
+
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     testImplementation("junit:junit:4.13.2")
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
@@ -84,6 +86,10 @@ dependencies {
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutines_version")
 
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:$coroutines_version")
+
+    // Dependency Injection
+    implementation ("io.insert-koin:koin-android:3.1.2")
+
 
     //dagger hilt
     implementation("com.google.dagger:hilt-android:2.44.2")
