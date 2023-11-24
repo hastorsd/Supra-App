@@ -1,7 +1,7 @@
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
-    kotlin("kapt")
+    id("kotlin-kapt")
     id("com.google.dagger.hilt.android")
 }
 
@@ -136,8 +136,4 @@ dependencies {
 
     //noinspection GradleDependency
     implementation ("androidx.room:room-ktx:$room_version")
-}
-
-kapt {
-    correctErrorTypes = true
 }
