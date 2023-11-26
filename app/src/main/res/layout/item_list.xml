@@ -11,14 +11,15 @@
         android:layout_height="100dp"
         android:src="@mipmap/ic_launcher"
         />
+
     <TextView
         android:id="@+id/name_rv"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:text="Hallo"
         android:textColor="#409AFF"
         android:textSize="24sp"
-        android:textStyle="bold"
-        android:text="Hallo"/>
+        android:textStyle="bold" />
 
 </LinearLayout>

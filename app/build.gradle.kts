@@ -87,6 +87,9 @@ dependencies {
 
     implementation ("org.jetbrains.kotlinx:kotlinx-coroutines-play-services:$coroutines_version")
 
+    //Coroutine View Model Scope.
+    implementation ("androidx.lifecycle:lifecycle-viewmodel-ktx:2.1.0")
+
     // Dependency Injection
     implementation ("io.insert-koin:koin-android:3.1.2")
 

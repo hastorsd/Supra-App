@@ -18,15 +18,15 @@
         
         <activity
             android:name=".ui.TampilanApi"
-            android:exported="true"
+            android:exported="false"
             android:label="@string/title_activity_tampilan_api"
             android:theme="@style/Theme.SupraApp" />
         <activity
             android:name=".ui.Home"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".ui.WelcomePage"
-            android:exported="true" />
+            android:exported="false" />
         <activity
             android:name=".MainActivity"
             android:exported="true">

@@ -7,6 +7,7 @@ import android.view.View
 import android.view.ViewGroup
 import com.example.supraapp.R
 import com.example.supraapp.databinding.FragmentNavigationParentBinding
+import com.example.supraapp.ui.home.HomeFragment
 
 class NavigationParentFragment : Fragment() {
 
