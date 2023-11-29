@@ -1,10 +1,12 @@
 package com.example.supraapp.ui.login
 
 import android.os.Bundle
+import android.util.Log
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.lifecycle.viewModelScope
 import androidx.navigation.fragment.findNavController
 import com.example.supraapp.R
@@ -36,8 +38,11 @@ class LoginFragment : Fragment() {
         with(viewModel) {
             observeIsLogin().observe(requireActivity()){
                 it.let { data ->
+                    Log.d("Login", "observeData: ")
                     if (data != null) {
                         findNavController().navigate(R.id.action_loginFragment_to_navigationParentFragment)
+                    } else {
+                        Toast.makeText(requireActivity(), "Email Salah", Toast.LENGTH_LONG).show()
                     }
                 }
             }

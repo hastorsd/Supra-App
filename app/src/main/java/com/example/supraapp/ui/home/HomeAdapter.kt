@@ -9,10 +9,12 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.supraapp.R
+import com.example.supraapp.registdata.remote.response.NewSurahResponse
+import com.example.supraapp.registdata.remote.response.NewSurahResponseItem
 import com.example.supraapp.registdata.remote.response.SurahResponse
 import java.util.Collections.list
 
-class HomeAdapter(private val list: List<SurahResponse>): RecyclerView.Adapter<HomeAdapter.MyViewHolder>() {
+class HomeAdapter(private val list: ArrayList<NewSurahResponseItem>): RecyclerView.Adapter<HomeAdapter.MyViewHolder>() {
     inner class MyViewHolder(view: View): RecyclerView.ViewHolder(view){
         val title: TextView = view.findViewById(R.id.title)
         val arabic: TextView = view.findViewById(R.id.titlearabic)

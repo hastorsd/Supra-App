@@ -5,7 +5,7 @@ import androidx.room.RoomDatabase
 import com.example.supraapp.registdata.local.dao.UserDao
 import com.example.supraapp.registdata.local.entity.UserEntity
 
-@Database(entities = [UserEntity::class], version = 2, exportSchema = false)
+@Database(entities = [UserEntity::class], version = 1, exportSchema = false)
 abstract class AppDatabase: RoomDatabase() {
     abstract fun UserDao(): UserDao
 
