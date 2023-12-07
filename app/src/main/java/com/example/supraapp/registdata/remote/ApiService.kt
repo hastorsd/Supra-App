@@ -6,6 +6,6 @@ import retrofit2.Response
 import retrofit2.http.GET
 
 interface ApiService {
-    @GET("/surah")
+    @GET("surah")
     suspend fun getSurah() : Response<NewSurahResponse>
 }

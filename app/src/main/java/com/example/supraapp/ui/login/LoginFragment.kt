@@ -58,7 +58,7 @@ class LoginFragment : Fragment() {
                 if (password.text.isNullOrBlank()){
                     password.error = "Password masih kosong"
                 }
-                if (!email.text.isNullOrBlank() && password.text.isNullOrBlank()){
+                if (!email.text.isNullOrBlank() && !password.text.isNullOrBlank()){
                     viewModel.getDataLogin(email.text.toString(), password.text.toString())
                 }
             }
