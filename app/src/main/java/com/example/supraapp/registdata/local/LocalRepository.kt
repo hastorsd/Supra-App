@@ -1,7 +1,6 @@
 package com.example.supraapp.registdata.local
 
 import com.example.supraapp.registdata.local.entity.UserEntity
-import com.mobsandgeeks.saripaar.annotation.Password
 
 class LocalRepository(private val appDatabase: AppDatabase) {
     suspend fun insertUser(userEntity: UserEntity) {
