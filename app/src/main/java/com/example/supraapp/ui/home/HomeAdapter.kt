@@ -15,7 +15,7 @@ import com.example.supraapp.registdata.remote.response.NewSurahResponseItem
 import com.example.supraapp.registdata.remote.response.SurahResponse
 import java.util.Collections.list
 
-class HomeAdapter(private val list: List<NewSurahResponseItem>, private var playListener: onItemClick, private var onPause: onItemClick): RecyclerView.Adapter<HomeAdapter.MyViewHolder>() {
+class HomeAdapter(private val list: List<NewSurahResponseItem>, private var playListener: onItemClick): RecyclerView.Adapter<HomeAdapter.MyViewHolder>() {
     inner class MyViewHolder(view: View): RecyclerView.ViewHolder(view){
         val title: TextView = view.findViewById(R.id.title)
         val arabic: TextView = view.findViewById(R.id.titlearabic)
@@ -23,12 +23,6 @@ class HomeAdapter(private val list: List<NewSurahResponseItem>, private var play
         val arti: TextView = view.findViewById(R.id.artiSurah)
         val description: TextView = view.findViewById(R.id.deskripsiSurah)
         val audio: Button = view.findViewById(R.id.buttonAudio)
-        val pause: Button = view.
-        fun itemClick(data: NewSurahResponseItem, action: onItemClick){
-            audio.setOnClickListener {
-                action.setOnItemClick(data, adapterPosition)
-            }
-        }
         fun itemClick(data: NewSurahResponseItem, action: onItemClick){
             audio.setOnClickListener {
                 action.setOnItemClick(data, adapterPosition)
@@ -57,4 +51,6 @@ class HomeAdapter(private val list: List<NewSurahResponseItem>, private var play
     interface onItemClick {
         fun setOnItemClick(data: NewSurahResponseItem, position: Int)
     }
+
+
 }
