@@ -37,8 +37,8 @@ class LoginFragment : Fragment() {
     private fun observeData() {
         with(viewModel) {
             observeIsLogin().observe(requireActivity()){
+                Log.d("observe", "observeData: ")
                 it.let { data ->
-                    Log.d("Login", "observeData: ")
                     if (data != null) {
                         findNavController().navigate(R.id.action_loginFragment_to_navigationParentFragment)
                     } else {

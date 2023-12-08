@@ -102,6 +102,7 @@
         android:textColorHighlight="#FFFFFF"
         android:textColorHint="#475569"
         android:textSize="21dp"
+        android:inputType="textPassword"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.46"

@@ -40,7 +40,7 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintHorizontal_bias="0.045"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/titlearabic"
         app:layout_constraintVertical_bias="0.012" />
@@ -55,7 +55,7 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.043"
+        app:layout_constraintHorizontal_bias="0.045"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView45"
         app:layout_constraintVertical_bias="0.0" />
@@ -69,7 +69,7 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.042"
+        app:layout_constraintHorizontal_bias="0.045"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/tempatTurun"
         app:layout_constraintVertical_bias="0.029" />
@@ -104,8 +104,8 @@
 
     <TextView
         android:id="@+id/deskripsiSurah"
-        android:layout_width="387dp"
-        android:layout_height="180dp"
+        android:layout_width="381dp"
+        android:layout_height="175dp"
         android:text="odkwaodkowakdowkaodkwoakd"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"

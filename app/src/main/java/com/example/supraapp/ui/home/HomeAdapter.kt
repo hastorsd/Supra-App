@@ -6,6 +6,7 @@ import android.provider.MediaStore.Audio
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.supraapp.R
@@ -14,14 +15,25 @@ import com.example.supraapp.registdata.remote.response.NewSurahResponseItem
 import com.example.supraapp.registdata.remote.response.SurahResponse
 import java.util.Collections.list
 
-class HomeAdapter(private val list: ArrayList<NewSurahResponseItem>): RecyclerView.Adapter<HomeAdapter.MyViewHolder>() {
+class HomeAdapter(private val list: List<NewSurahResponseItem>, private var playListener: onItemClick, private var onPause: onItemClick): RecyclerView.Adapter<HomeAdapter.MyViewHolder>() {
     inner class MyViewHolder(view: View): RecyclerView.ViewHolder(view){
         val title: TextView = view.findViewById(R.id.title)
         val arabic: TextView = view.findViewById(R.id.titlearabic)
         val place: TextView = view.findViewById(R.id.tempatTurun)
         val arti: TextView = view.findViewById(R.id.artiSurah)
         val description: TextView = view.findViewById(R.id.deskripsiSurah)
-        val audio: TextView = view.findViewById(R.id.buttonAudio)
+        val audio: Button = view.findViewById(R.id.buttonAudio)
+        val pause: Button = view.
+        fun itemClick(data: NewSurahResponseItem, action: onItemClick){
+            audio.setOnClickListener {
+                action.setOnItemClick(data, adapterPosition)
+            }
+        }
+        fun itemClick(data: NewSurahResponseItem, action: onItemClick){
+            audio.setOnClickListener {
+                action.setOnItemClick(data, adapterPosition)
+            }
+        }
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
@@ -34,11 +46,15 @@ class HomeAdapter(private val list: ArrayList<NewSurahResponseItem>): RecyclerVi
     }
 
     override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
-        holder.title.text = list[position].nama
-        holder.arabic.text = list[position].namaLatin
+        holder.title.text = list[position].namaLatin
+        holder.arabic.text = list[position].nama
         holder.place.text = list[position].tempatTurun
         holder.arti.text = list[position].arti
         holder.description.text = list[position].deskripsi
-        holder.audio.text = list[position].audio
+        holder.itemClick(list[position], playListener)
+    }
+
+    interface onItemClick {
+        fun setOnItemClick(data: NewSurahResponseItem, position: Int)
     }
 }
