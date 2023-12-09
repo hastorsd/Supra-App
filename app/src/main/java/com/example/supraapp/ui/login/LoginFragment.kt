@@ -40,7 +40,9 @@ class LoginFragment : Fragment() {
                 Log.d("observe", "observeData: ")
                 it.let { data ->
                     if (data != null) {
-                        findNavController().navigate(R.id.action_loginFragment_to_navigationParentFragment)
+                        if (isAdded) {
+                            findNavController().navigate(R.id.action_loginFragment_to_navigationParentFragment3)
+                        }
                     } else {
                         Toast.makeText(requireActivity(), "Email Salah", Toast.LENGTH_LONG).show()
                     }

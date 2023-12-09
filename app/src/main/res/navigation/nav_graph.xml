@@ -21,7 +21,7 @@
             android:id="@+id/action_loginFragment_to_registerFragment5"
             app:destination="@id/registerFragment5" />
         <action
-            android:id="@+id/action_loginFragment_to_navigationParentFragment"
+            android:id="@+id/action_loginFragment_to_navigationParentFragment3"
             app:destination="@id/navigationParentFragment" />
     </fragment>
     <fragment
@@ -29,7 +29,10 @@
         android:name="com.example.supraapp.ui.register.RegisterFragment"
         android:label="RegisterFragment" >
         <action
-            android:id="@+id/action_registerFragment5_to_loginFragment"
+            android:id="@+id/action_registerFragment5_to_navigationParentFragment"
+            app:destination="@id/navigationParentFragment" />
+        <action
+            android:id="@+id/action_registerFragment5_to_loginFragment2"
             app:destination="@id/loginFragment" />
     </fragment>
     <fragment

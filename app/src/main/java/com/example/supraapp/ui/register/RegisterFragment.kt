@@ -35,7 +35,7 @@ class RegisterFragment : Fragment() {
             observeIsRegister().observe(viewLifecycleOwner) {
                 it.let { data ->
                     if (data){
-                        findNavController().navigate(R.id.action_registerFragment5_to_loginFragment)
+                        findNavController().navigate(R.id.action_registerFragment5_to_loginFragment2)
                     } else {
                         Toast.makeText(requireContext(), "Email sudah terdaftar", Toast.LENGTH_SHORT).show()
                     }

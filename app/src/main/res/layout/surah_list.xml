@@ -104,9 +104,10 @@
 
     <TextView
         android:id="@+id/deskripsiSurah"
-        android:layout_width="381dp"
-        android:layout_height="175dp"
+        android:layout_width="383dp"
+        android:layout_height="248dp"
         android:text="odkwaodkowakdowkaodkwoakd"
+        android:textAlignment="gravity"
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -122,9 +123,8 @@
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/deskripsiSurah"
-        app:layout_constraintVertical_bias="0.211" />
+        app:layout_constraintVertical_bias="0.128" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

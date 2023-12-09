@@ -36,7 +36,7 @@ class HomeFragment : Fragment(), HomeAdapter.onItemClick {
 
     private fun observeData() {
         with(viewModel){
-            observeSurah.observe(requireActivity()){
+            observeSurah.observe(viewLifecycleOwner){
                 it.let { data ->
                     list = data.body() ?: listOf()
                     with(binding.surahs){
