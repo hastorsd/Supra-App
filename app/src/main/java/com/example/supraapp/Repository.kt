@@ -14,5 +14,9 @@ class Repository(private val localRepository: LocalRepository, private val remot
         return localRepository.getUser(email, password)
     }
 
+    suspend fun getProfile(email: String): UserEntity {
+        return localRepository.getProfile(email)
+    }
+
     suspend fun getSurah() = remoteRepository.getSurah()
 }
