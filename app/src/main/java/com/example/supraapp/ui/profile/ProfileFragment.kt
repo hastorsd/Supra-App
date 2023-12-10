@@ -42,4 +42,5 @@ class ProfileFragment : Fragment() {
             }
         }
     }
+
 }

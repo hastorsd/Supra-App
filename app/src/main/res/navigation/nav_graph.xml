@@ -39,5 +39,9 @@
         android:id="@+id/navigationParentFragment"
         android:name="com.example.supraapp.ui.NavigationParentFragment"
         android:label="fragment_navigation_parent"
-        tools:layout="@layout/fragment_navigation_parent" />
+        tools:layout="@layout/fragment_navigation_parent" >
+        <action
+            android:id="@+id/action_navigationParentFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
 </navigation>

@@ -20,9 +20,14 @@ class NavigationParentFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         _binding = FragmentNavigationParentBinding.inflate(inflater, container, false)
+        val email = arguments?.getString("email") ?: ""
 
         val homeFragment = HomeFragment()
-        val profileFragment = ProfileFragment()
+        val profileFragment = ProfileFragment().apply{
+            arguments = Bundle().apply {
+                putString("email", email)
+            }
+        }
 
         setCurrentFragment(homeFragment)
 
